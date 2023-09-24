@@ -1,13 +1,9 @@
 package main
 
 import (
-	"fmt"
+	//"fmt"
 	"net/http"
 )
-
-func helloWorldPage(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "Hello World")
-}
 
 func main() {
 	fs := http.FileServer(http.Dir("./index"))
