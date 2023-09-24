@@ -10,7 +10,7 @@ func helloWorldPage(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/hello", helloWorldPage)
+	http.HandleFunc("/", helloWorldPage)
 	fmt.Println("Starting server on port 8080")
 	http.ListenAndServe(":8080", nil)
 }
